@@ -1,0 +1,14 @@
+endpoint,method,expected_status,description
+login,get,405,this method should not be here
+login,post,405,this method should not be here
+login,patch,405,this method should not be here
+login,put,405,this method should not be here
+login,update,405,this method should not be here
+login,options,200,"OPTIONS, LOGIN"
+login,login,402,wrong credentials
+status,get,200,not_authorized
+status,post,405,this method should not be here
+status,patch,405,this method should not be here
+status,put,405,this method should not be here
+status,update,405,this method should not be here
+status,hello,200,"hello, you are not authorized"
